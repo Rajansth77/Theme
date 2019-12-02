@@ -15,10 +15,13 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="section1">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">LOGO</a>
+        <div class="container-fluid p-0 m-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                <a class="navbar-brand" href="#">
+                    <h3>LOGO</h3>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,30 +30,24 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item active">
+                        <li class="nav-item px-3 active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">Gossip</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">Biography</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-3">
                             <a class="nav-link" href="#">Entertainment</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-search"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                            </div>
+                        <li class="nav-item px-3">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" style="width: 150px;" type="search"
+                                    placeholder="Search" aria-label="Search"><a href="#" class="search-icon"><i
+                                        class="fa fa-search text-light"></i></a>
+                            </form>
                         </li>
                     </ul>
 
@@ -59,79 +56,327 @@
         </div>
     </div>
 
-    <div class="section2">
+    <!-- Featured -->
+    <div class="section2 mt-3">
         <div class="container-fluid">
-            <h4>Featured</h4>
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
-                        <ol class="carousel-indicators">
-                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#blogCarousel" data-slide-to="1"></li>
-                        </ol>
+            <h4>FEATURED</h4>
+            <hr class="m-0 p-0">
 
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-4">
+                <!--Controls-->
+                <div class="controls-top text-right">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="mx-3  fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
                                         <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
+                                            <h4 class="text-dark">Title</h4>
                                         </a>
                                     </div>
                                 </div>
-                                <!--.row-->
                             </div>
-                            <!--.item-->
 
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
                                         <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="http://placehold.it/500x300" alt="Image" style="max-width:100%;">
+                                            <h4 class="text-dark">Title</h4>
                                         </a>
                                     </div>
                                 </div>
-                                <!--.row-->
                             </div>
-                            <!--.item-->
 
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!--.carousel-inner-->
+
                     </div>
-                    <!--.Carousel-->
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2" style="width: 107%">
+                                    <img class="card-img-top"
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                        alt="Card image cap" style="height: 250px">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="text-dark">Title</h4>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
+
+        </div>
+    </div>
+
+    <!-- Trending -->
+    <div class="section3 mt-3">
+        <div class="container-fluid">
+
+            <h4>TRENDING</h4>
+            <hr class="m-0 p-0">
+
+            <div class="row">
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/barbara.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/barbara.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/fruits.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/frymire.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/fruits.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/frymire.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png" alt="Image" width="100%">
+                        <h4><span class="text-dark">News Title</span></h4>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section3">
+    <!-- Latest -->
+    <div class="section4 mt-3">
         <div class="container-fluid">
+
+            <h4>LATEST</h4>
+            <hr class="m-0 p-0">
+
             <div class="row">
-                <div class="col-md-5">
-                    
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/0/5616/3744" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/1/5616/3744" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/10/2500/1667" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/100/2500/1656" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/1004/5616/3744" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/1005/5760/3840" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/1008/5616/3744" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 m-0 p-1">
+                    <a href="#">
+                        <img src="https://picsum.photos/id/1015/6000/4000" alt="Image" style="max-width:100%;">
+                    </a>
                 </div>
             </div>
         </div>
