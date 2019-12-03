@@ -1,0 +1,82 @@
+// Variables
+
+$deepBlue: #032f3e;
+$offWhite: #f8f9fb;
+$sectionHeading: 18px;
+
+// Mixins
+@mixin banner {
+
+    img{
+        filter: brightness(50%);
+        width: 100%;
+    }
+    .banner-content{
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        
+    }
+
+    span{
+        color: $offWhite !important;
+    }
+}
+
+
+// reset
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section1 {
+    a {
+        color: $offWhite !important;
+        font-size: $sectionHeading;
+
+        &:hover {
+            color: $deepBlue !important;
+        }
+    }
+}
+
+// search bar
+.input-icon {
+    position: relative;
+}
+
+.input-icon-addon:last-child {
+    left: auto;
+    right: 0;
+}
+
+.input-icon-addon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: #9aa0ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    pointer-events: none;
+}
+
+
+.section2{
+    @include banner;
+}
+
+.thumbnail{
+    overflow: hidden;
+    img{
+        transition: transform 0.5s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.section3{
+    @include banner;
+}

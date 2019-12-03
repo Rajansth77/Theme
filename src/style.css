@@ -1,0 +1,88 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.section1 a {
+  color: #f8f9fb !important;
+  font-size: 18px;
+}
+
+.section1 a:hover {
+  color: #032f3e !important;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon-addon:last-child {
+  left: auto;
+  right: 0;
+}
+
+.input-icon-addon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #9aa0ac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 2.5rem;
+  pointer-events: none;
+}
+
+.section2 img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  width: 100%;
+}
+
+.section2 .banner-content {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+
+.section2 span {
+  color: #f8f9fb !important;
+}
+
+.thumbnail {
+  overflow: hidden;
+}
+
+.thumbnail img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.thumbnail img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section3 img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  width: 100%;
+}
+
+.section3 .banner-content {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+
+.section3 span {
+  color: #f8f9fb !important;
+}
+/*# sourceMappingURL=style.css.map */
