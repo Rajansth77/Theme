@@ -1,0 +1,270 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#featured-author {
+  display: inline-block;
+  text-decoration: none;
+  color: #f8f9fb;
+}
+
+#featured-date {
+  display: inline-block;
+  margin-right: 2.5em;
+  margin-top: 5px;
+  color: #f8f9fb;
+}
+
+#biography-author {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+#biography-date {
+  display: inline-block;
+  margin-right: 2.5em;
+  margin-top: 5px;
+  color: black;
+}
+
+.news-title {
+  font-size: 17px;
+  line-height: 20px;
+  margin: 10px 0 0;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #fff;
+}
+
+.card {
+  height: 80%;
+}
+
+p.text-justify.mx-2.para {
+  font-size: 18px;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon-addon:last-child {
+  left: auto;
+  right: 0;
+}
+
+.input-icon-addon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #9aa0ac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 2.5rem;
+  pointer-events: none;
+}
+
+.section1 a {
+  color: #f8f9fb !important;
+  font-size: 18px;
+}
+
+.section1 a:hover {
+  color: #032f3e !important;
+}
+
+.section2 img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  width: 100%;
+}
+
+.section2 .banner-content {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.section2 a {
+  text-decoration: none;
+}
+
+.section2 span {
+  color: #f8f9fb !important;
+}
+
+.section2 .category {
+  font-size: 12px;
+}
+
+.thumbnail {
+  overflow: hidden;
+}
+
+.thumbnail img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.thumbnail img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section3 img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  width: 100%;
+}
+
+.section3 .banner-content {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.section3 a {
+  text-decoration: none;
+}
+
+.section3 span {
+  color: #f8f9fb !important;
+}
+
+.section3 .category {
+  font-size: 12px;
+}
+
+.section4 .latest-thumbnail {
+  overflow: hidden;
+}
+
+.section4 .latest-thumbnail img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.section4 .latest-thumbnail img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.section4 .latest-title {
+  font-size: 17px;
+  line-height: 27px;
+  margin: 10px 0 0;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.884);
+}
+
+.section4 .author {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.884);
+  line-height: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.section4 .time {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background: rgba(12, 127, 180, 0.795);
+  border-radius: 50px;
+  padding: 0.5em;
+}
+
+.section4 a {
+  text-decoration: none;
+}
+
+.social .fa-facebook-square {
+  color: blue;
+  font-size: 30px;
+}
+
+.social .fa-instagram {
+  color: orange;
+  font-size: 30px;
+}
+
+.social .fa-youtube {
+  color: red;
+  font-size: 30px;
+}
+
+.social .fa-twitter {
+  color: skyblue;
+  font-size: 30px;
+}
+
+.tags .single-tag p {
+  color: #f8f9fb;
+  background-color: rgba(10, 165, 212, 0.986);
+  margin: 5px;
+  padding: 4px 4px;
+  border-radius: 4px;
+  list-style-type: none;
+}
+
+.tags .single-tag {
+  float: left;
+}
+
+.footer {
+  padding: 15px 0 0 0;
+}
+
+.footer .footer-nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+}
+
+.biography-title {
+  text-decoration: none !important;
+  color: black;
+}
+
+.biography-slider img {
+  border-radius: 50%;
+}
+
+.biography img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.biography img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=style.css.map */
